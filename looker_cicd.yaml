@@ -16,4 +16,4 @@ entrypoint: 'bash'
 args: ['-c', 'curl -k -i -X POST -H X-Looker-Deploy-SECRET:$(cat /secrets/looker_deploy_secret) https://35.189.193.107:9999/webhooks/projects/LOOKERPROJECTNAME/deploy/branch/production']
 volumes:
 - name: 'secrets'
-path: '/secrets'
+  path: '/secrets'
